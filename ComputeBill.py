@@ -15,9 +15,8 @@ prices = {
     "apple": 11,
     "pears": 2
 }
-
-
 # compute method is below
+
 
 def compute_bill(food):
     total = 0
@@ -25,6 +24,7 @@ def compute_bill(food):
         if stock[item] > 0:
             total = prices[item] + total
             stock[item] -= 1
+
     return print(total)
 
 
