@@ -1,12 +1,10 @@
 # find factorial of a given number
-def factorial(number):
-    if number == 0:
+def factorial_example(num):
+    if num <= 1:
         return 1
     else:
-        return number * factorial(number - 1)
+        result = num * factorial_example(num - 1)
+        return result
 
+print(factorial_example(4))
 
-print("Enter the value for factorial: ")
-
-num = int(input())
-print(factorial(num))
